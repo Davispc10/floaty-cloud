@@ -19,7 +19,7 @@ public class PersonagemMovimento : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    if (Input.GetMouseButtonDown(0))
+    if (Input.GetMouseButtonDown(0) && Time.timeScale != 0)
     {
       rb.velocity = Vector2.zero;
       rb.AddForce(Vector2.up * 150);
